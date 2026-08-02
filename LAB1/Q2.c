@@ -2,22 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * Simulates a single coin toss given a target probability p of landing HEADS.
- * 
- * returns:
- *   1 if the toss results in HEADS
- *   0 if the toss results in TAILS
- */
+//simulates a single coin toss given a target probability p of landing heads
+//1:head, 0:tail
 int simul(double p) {
     // Generate a random double between 0.0 and 1.0
     double random_val = (double)rand() / RAND_MAX;
     
     // If the random value is strictly less than p, count as head
     if (random_val < p) {
-        return 1; // head
+        return 1;
     }
-    return 0;     // tail
+    return 0;
 }
 
 /**
@@ -43,16 +38,16 @@ void runexp(const char *coin_type, double target_p, long trials[]) {
 }
 
 int main() {
-    // Seed the random number generator with current system time
+    // seeding the random number generator with current system time
     srand((unsigned int)time(NULL));
 
-    // Array of trial counts demonstrating convergence as N increases
+    // array of trial counts showing convergence as N increases
     long trials[] = {100, 1000, 10000, 1000000};
 
-    // 1. Fair Coin Experiment (P(HEAD) = 0.5)
+    // Fair Coin Experiment (P(HEAD) = 0.5)
     runexp("Fair", 0.50, trials);
 
-    // 2. Biased Coin Experiment (P(HEAD) = 0.70)
+    // Biased Coin Experiment (P(HEAD) = 0.70)
     runexp("Biased", 0.70, trials);
 
     return 0;
