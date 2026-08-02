@@ -1,3 +1,12 @@
+"""
+Reads q3_results.csv (produced by: ./q3 > q3_results.csv)
+and plots comparisons vs array size for both bubble sort variants.
+ 
+How to run:
+    gcc -O2 -o q3 q3.c
+    ./q3 > q3_results.csv
+    python3 plot_q3.py
+"""
 import pandas as pd
 import matplotlib.pyplot as plt
 
