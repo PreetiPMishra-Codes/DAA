@@ -17,10 +17,10 @@ gcc -o <name> <name>.c -lm      # -lm needed only where math.h is used
 
 | File | Problem | Time | Space |
 |---|---|---|---|
-| `1_fibonacci.c` | nth Fibonacci number | O(n) | O(n) |
-| `2_knapsack.c` | 0/1 Knapsack (max profit for capacity `W`) | O(n·W) | O(n·W) |
-| `3_lcs.c` | Longest Common Subsequence (length + the subsequence itself) | O(m·n) | O(m·n) |
-| `4_matrix_chain.c` | Matrix Chain Multiplication (min scalar multiplications) | O(N³) | O(N²) |
+| `1.c` | nth Fibonacci number | O(n) | O(n) |
+| `2.c` | 0/1 Knapsack (max profit for capacity `W`) | O(n·W) | O(n·W) |
+| `3.c` | Longest Common Subsequence (length + the subsequence itself) | O(m·n) | O(m·n) |
+| `4.c` | Matrix Chain Multiplication (min scalar multiplications) | O(N³) | O(N²) |
 
 ### How to run
 
@@ -66,12 +66,12 @@ printf "4\n10 30 5 60\n" | ./mcm             # Minimum multiplications = 4500
 
 | File | Problem | Key complexity result |
 |---|---|---|
-| `4_array_ops.c` | 9 classic 1D array operations | see table below |
-| `6_matrix_ops.c` | 7 classic n×n matrix operations | see table below |
-| `7_convolution_fft.c` | Vector convolution via D&C FFT | **O(n log n)** |
-| `8_reversal_sort.c` | Sort a permutation using only `reverse(p,i,j)` | O(n) reversal **count**, then O(n log²n) reversal **cost** |
+| `5.c` | 9 classic 1D array operations | see table below |
+| `6.c` | 7 classic n×n matrix operations | see table below |
+| `7.c` | Vector convolution via D&C FFT | **O(n log n)** |
+| `8.c` | Sort a permutation using only `reverse(p,i,j)` | O(n) reversal **count**, then O(n log²n) reversal **cost** |
 
-### 5. Array operations — `1_array_ops.c`
+### 5. Array operations — `5.c`
 
 Given an unsorted `int` array of size `n`:
 
@@ -93,7 +93,7 @@ printf "8\n5 3 9 3 7 1 9 2\n5\n" | ./arr
 ```
 Prompts for `n`, the `n` elements, then a pivot value at the end (for the partition demo). Prints the result and Big-O of every operation.
 
-### 6. Matrix operations — `2_matrix_ops.c`
+### 6. Matrix operations — `6.c`
 
 Given two n×n matrices `A`, `B` (as `double`):
 
@@ -113,7 +113,7 @@ printf "3\n2 0 0\n0 2 0\n0 0 2\n1 2 3\n4 5 6\n7 8 9\n" | ./mat
 ```
 Prompts for `n`, matrix `A`, matrix `B`; prints every result with its complexity tag.
 
-### 7. Convolution — `3_convolution_fft.c`
+### 7. Convolution — `7.c`
 
 Computes `C[k] = Σ A[j]·B[k−j]` for vectors `A` (length `m`) and `B`
 (length `n ≥ m`) in **O(n log n)** using a divide-and-conquer radix-2
@@ -132,7 +132,7 @@ printf "3\n1 2 3\n4\n4 5 6 7\n" | ./conv
 ```
 Verified against `numpy.convolve` — exact match.
 
-### 8. Sorting via reversal — `4_reversal_sort.c`
+### 8. Sorting via reversal — `8.c`
 
 Given a permutation `p` of `1..n`, the only allowed operation is
 `reverse(p, i, j)`.
