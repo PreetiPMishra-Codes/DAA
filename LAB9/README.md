@@ -1,6 +1,5 @@
 # DAA Lab-09 – Greedy algorithms (solutions)
 
-Compile any program with `gcc -O2 -o qN qN_*.c` (keep `heap.h` in the same folder). Input formats are in the header comment of each file.
 
 | # | Problem | Greedy choice | Time | Space |
 |---|---------|---------------|------|-------|
