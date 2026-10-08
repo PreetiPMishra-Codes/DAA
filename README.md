@@ -31,11 +31,15 @@ The majority of the algorithms are implemented natively in **C**. For visualizin
 
 | Directory | Core Focus & Topics Covered | Key Implementations |
 | :--- | :--- | :--- |
-| **[📁 LAB1](./LAB1)** | **Algorithmic Growth & Complexity** | Python-based Matplotlib scripts for comparing mathematical function growth rates. |
-| **[📁 LAB2](./LAB2)** | **Divide & Conquer Paradigms** | `k`-way merge algorithms, growth analysis, and SDL-based graphical data plotting. |
-| **[📁 LAB3](./LAB3)** | **Foundational Sorting Algorithms** | Implementation and time-complexity analysis of fundamental sorts like Selection Sort. |
-| **[📁 LAB4](./LAB4)** | **Practical Applications of Sorting** | Stable linear partitioning, two-pointer techniques, event-driven sweep-line, and interval management. |
-
+| [📁 LAB1](LAB1) | **Algorithmic Growth & Complexity** | Python-based Matplotlib scripts for comparing mathematical function growth rates. |
+| [📁 LAB2](LAB2) | **Divide & Conquer Paradigms** | $k$-way merge algorithms, growth analysis, and SDL-based graphical data plotting. |
+| [📁 LAB3](LAB3) | **Foundational Sorting Algorithms** | Implementation and time-complexity analysis of fundamental sorts like Selection Sort (`Q6.c`). |
+| [📁 LAB4](LAB4) | **Practical Applications of Sorting** | Stable linear partitioning, two-pointer techniques, event-driven sweep-line, and interval management. |
+| [📁 LAB5](LAB5) | **Advanced Design Paradigms** | Implementation of dynamic algorithms with detailed README descriptions. |
+| [📁 LAB6](LAB6) | **C Algorithmic Solutions** | Optimized standard algorithms implemented in C for runtime analysis and efficiency. |
+| [📁 LAB7](LAB7) | **Data Structures & Analysis** | Core algorithmic data structures and performance profiling. |
+| [📁 LAB8](LAB8) | **Dynamic Programming & Trees** | Optimal Binary Search Tree (BST) implementation (`8.c`) and complexity analysis. |
+| [📁 LAB9](LAB9) | **Advanced Topics** | Comprehensive solutions for core design and analysis problems. |
 ---
 
 ## 🛠️ Tech Stack & Tools
