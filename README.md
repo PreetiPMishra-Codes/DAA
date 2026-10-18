@@ -40,6 +40,7 @@ The majority of the algorithms are implemented natively in **C**. For visualizin
 | [📁 LAB7](LAB7) | **Data Structures & Analysis** | Core algorithmic data structures and performance profiling. |
 | [📁 LAB8](LAB8) | **Dynamic Programming & Trees** | Optimal Binary Search Tree (BST) implementation (`8.c`) and complexity analysis. |
 | [📁 LAB9](LAB9) | **Advanced Topics** | Comprehensive solutions for core design and analysis problems. |
+| [📁 LAB10](LAB10) | **Disjoint Set Union & Graph Algorithms** | Implementation of online bipartiteness testing, dynamic grid islands, weighted components, and reverse time-step DSU applications. |
 ---
 
 ## 🛠️ Tech Stack & Tools
