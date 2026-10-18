@@ -58,8 +58,6 @@ gcc 1.c -o 1.exe
 .\1.exe
 ```
 
-Replace `1.c` with the filename you want to run.
-
 > **Input:** Each program reads data using `scanf`. Follow the input order listed under the relevant problem.
 
 ---
