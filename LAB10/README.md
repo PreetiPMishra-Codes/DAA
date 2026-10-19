@@ -40,27 +40,6 @@ DAA-Lab-10/
 
 ---
 
-## ⚙️ Getting Started
-
-### Compile and run
-
-Using GCC:
-
-```bash
-gcc 1.c -o 1
-./1
-```
-
-On Windows:
-
-```powershell
-gcc 1.c -o 1.exe
-.\1.exe
-```
-
-> **Input:** Each program reads data using `scanf`. Follow the input order listed under the relevant problem.
-
----
 
 ## 🧠 Solutions at a Glance
 
